@@ -1,0 +1,198 @@
+/* CV Bot Mobile Responsive Adjustments */
+@media screen and (max-width: 480px) {
+  #cv-bot-container {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    z-index: 999999 !important;
+    /* Prevent touch callouts and selection */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: auto !important;
+  }
+  
+  #cv-bot-toggle {
+    padding: 16px 20px;
+    font-size: 14px;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1000000;
+    min-width: 56px;
+    min-height: 56px;
+    /* Improve touch interaction */
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+  }
+  
+  #cv-bot-toggle span {
+    display: none;
+  }
+  
+  #cv-bot-chat {
+    width: calc(100vw - 40px);
+    height: 500px;
+    right: 0;
+    bottom: 85px;
+    position: absolute;
+    z-index: 999998;
+    /* Allow scrolling within bot but prevent background scroll */
+    touch-action: pan-y;
+    /* Prevent accidental close on touch */
+    pointer-events: auto;
+    /* Smooth scrolling */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+  }
+  
+  #cv-bot-header {
+    padding: 15px 18px;
+    pointer-events: auto;
+  }
+  
+  .bot-details h4 {
+    font-size: 16px;
+  }
+  
+  .bot-status {
+    font-size: 12px;
+  }
+  
+  #cv-bot-messages {
+    padding: 18px;
+    /* Allow smooth scrolling within messages */
+    overflow-y: auto;
+    overflow-x: hidden;
+    touch-action: pan-y;
+    /* Prevent scroll bounce on iOS */
+    overscroll-behavior: contain;
+    /* Smooth scrolling */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .message-content {
+    font-size: 14px;
+    padding: 12px 14px;
+    max-width: 85%;
+  }
+  
+  .quick-actions {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .quick-btn {
+    padding: 10px 14px;
+    font-size: 13px;
+    min-height: 44px;
+    min-width: 44px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+  }
+  
+  .quick-btn:active {
+    transform: scale(0.95);
+  }
+  
+  #cv-bot-input-container {
+    padding: 15px 18px;
+    pointer-events: auto;
+  }
+  
+  .suggested-questions {
+    gap: 3px;
+    margin-bottom: 8px;
+  }
+  
+  .suggestion-btn {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+  
+  #cv-bot-input {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  #send-btn {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #cv-bot-container {
+    position: fixed !important;
+    bottom: 15px !important;
+    right: 15px !important;
+    z-index: 9999 !important;
+  }
+  
+  #cv-bot-chat {
+    width: calc(100vw - 30px);
+    right: 0;
+    position: absolute;
+    z-index: 9998;
+  }
+  
+  .message-content {
+    max-width: 90%;
+  }
+}
+
+/* Tablet adjustments */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #cv-bot-chat {
+    width: 320px;
+  }
+  
+  #cv-bot-toggle span {
+    font-size: 13px;
+  }
+}
+
+/* Keep Agent M clear of the fixed mobile bottom navigation. */
+@media screen and (max-width: 768px) {
+  html body #cv-bot-container {
+    right: calc(14px + env(safe-area-inset-right, 0px)) !important;
+    bottom: calc(var(--mobile-bottom-nav-height, 70px) + env(safe-area-inset-bottom, 0px) + 16px) !important;
+    z-index: 10020 !important;
+  }
+
+  html body #cv-bot-toggle {
+    width: clamp(52px, 14vw, 60px) !important;
+    height: clamp(52px, 14vw, 60px) !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+  }
+
+  html body #cv-bot-toggle i {
+    font-size: clamp(18px, 5vw, 22px) !important;
+  }
+
+  html body #cv-bot-chat {
+    bottom: calc(100% + 12px) !important;
+    right: 0 !important;
+    width: min(380px, calc(100vw - 24px)) !important;
+    max-height: calc(100dvh - var(--mobile-bottom-nav-height, 70px) - env(safe-area-inset-bottom, 0px) - 112px) !important;
+    min-height: 0 !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html body #cv-bot-container {
+    right: calc(10px + env(safe-area-inset-right, 0px)) !important;
+    bottom: calc(var(--mobile-bottom-nav-height, 70px) + env(safe-area-inset-bottom, 0px) + 12px) !important;
+  }
+}

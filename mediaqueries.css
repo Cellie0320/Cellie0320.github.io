@@ -1,0 +1,706 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    min-height: 83vh;
+    height: auto;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+    justify-content: flex-start;
+  }
+  .section__pic-container {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensure the container takes full width */
+  }
+  section {
+    padding: 2rem 1rem; /* Add padding to sections */
+    margin-bottom: 2rem; /* Add margin to sections */
+  }
+  .btn-more-info {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 2px solid black; /* Add border */
+    border-radius: 10px; /* Rounded edges */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .btn-more-info:hover {
+    background-color: black; /* Transparent hover effect */
+    color: white; /* Change text color on hover */
+    transform: scale(1.05);
+  }
+  .btn-more-info:active {
+    background-color: black;
+    transform: scale(0.95);
+  }
+  .btn-more-info:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+  .text-container {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    border-radius: 10px; /* Rounded edges */
+  }
+  .text-container p {
+    line-height: 1.6; /* Improve line spacing */
+    margin-bottom: 1rem; /* Add margin between paragraphs */
+    word-spacing: 0.05rem; /* Ensure even word spacing */
+  }
+}
+footer .contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align to the left */
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+  border-radius: 10px; /* Rounded edges */
+  text-align: left; /* Ensure text is left-aligned */
+}
+
+footer .contact-info-container p,
+footer .contact-info-container a {
+  margin: 0.5rem 0; /* Add margin for spacing */
+}
+
+.contact-info-upper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+  border-radius: 10px; /* Rounded edges */
+  text-align: left; /* Ensure text is left-aligned */
+}
+
+.contact-info-upper-container p,
+.contact-info-upper-container a {
+  margin: 0.01rem 0; /* Reduce margin for spacing */
+  width: fit-content;
+}
+.section__text__p1 {
+  font-size: 1.5rem; /* Increase font size */
+}
+.modal-content {
+  width: 90%; /* Adjust width for mobile */
+  margin: 30% auto; /* Adjust margin for mobile */
+}
+.note {
+  text-align: center;
+  font-size: 1rem;
+  color: gray;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between; /* Ensure space between logo and menu */
+    align-items: center; /* Center vertically */
+    padding: 0 1rem; /* Add padding to move the menu away from the edge */
+  }
+  .hamburger-menu {
+    display: flex-end;
+    align-items: center;
+    gap: 1rem; /* Add gap between the hamburger menu and the title */
+    padding-right: 1rem; /* Add suitable padding to the right */
+    margin-top: 20px;
+  }
+  .hamburger-icon {
+    margin-left: auto; /* Move the hamburger icon to the right */
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+    padding: 2rem 1rem; /* Add padding to sections */
+    margin-bottom: 2rem; /* Add margin to sections */
+  }
+  .section__pic-container {
+    display: flex;
+    justify-content: center;
+    width: 275px;
+    height: 275px;
+    margin: 0;
+    margin-top: 00.5rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .logo {
+    font-size: 1.75rem;
+    padding-left: 40px;
+    text-align: center;
+    flex: 1; /* Ensure the logo takes up available space */
+    
+  }
+
+  .logo-img {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+    margin-right: 10px; /
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 1.75rem;
+    text-align: center; /* Center the title text */
+    padding: 0; /* Add padding to move the title away from the edge */
+    transition: color 0.3s, transform 0.3s; /* Add transition for hover and click effects */
+    margin-bottom: 0.5rem
+  }
+  .title:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  .title:active {
+    color: #0056b3; /* Change color on click */
+    transform: scale(0.95); /* Slightly shrink on click */
+  }
+  .text-container {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    border-radius: 10px; /* Rounded edges */
+  }
+  .text-container p {
+    line-height: 1.6; /* Improve line spacing */
+    margin-bottom: 1rem; /* Add margin between paragraphs */
+    word-spacing: 0.05rem; /* Ensure even word spacing */
+  }
+  .btn-more-info {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+  }
+}
+.contact-info-upper-container p,
+.contact-info-upper-container a {
+  margin: 0.01rem 0; /* Reduce margin for spacing */
+  width: fit-content;
+}
+.section__text__p1 {
+  font-size: 1.5rem; /* Increase font size */
+}
+/* Add focus display scroll effect on project cards */
+.project-card:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Add a focus shadow */
+  scroll-margin-top: 1rem; /* Adjust scroll position to add some margin at the top */
+}
+
+/* Ensure project cards are focusable */
+.project-card {
+  outline: none;
+  cursor: pointer;
+}
+
+.note {
+  text-align: center;
+  font-size: 1rem;
+  color: gray;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 914px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between; /* Ensure space between logo and menu */
+    align-items: center; /* Center vertically */
+    padding: 0; /* Add padding to move the menu away from the edge */
+    padding-right: 70px; /* Add padding to move the menu away from the edge */
+  }
+  .hamburger-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Add gap between the hamburger menu and the title */
+    padding-right: 1rem; /* Add suitable padding to the right */
+  }
+  .hamburger-icon {
+    margin-left: auto; /* Move the hamburger icon to the right */
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+    padding: 2rem 1rem; /* Add padding to sections */
+    margin-bottom: 2rem; /* Add margin to sections */
+  }
+  .section__pic-container {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
+    margin-top: 0.5rem; 
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .logo {
+    font-size: 1.75rem; /* Adjust as needed for mobile */
+    margin-top: 25px; /* Move it down a bit for mobile */
+    align-items: center; /* Center vertically */
+  }
+
+  .logo-img {
+    height: 140px; /* Adjust as needed */
+    width: auto;
+    margin-right: 10px; /
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 1.75rem;
+    text-align: center; /* Center the title text */
+    padding: 0; /* Add padding to move the title away from the edge */
+    transition: color 0.3s, transform 0.3s; /* Add transition for hover and click effects */
+    margin-bottom: 0.5rem;
+  }
+  .title:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  .title:active {
+    color: #0056b3; /* Change color on click */
+    transform: scale(0.95); /* Slightly shrink on click */
+  }
+  .text-container {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    border-radius: 10px; /* Rounded edges */
+  }
+  .text-container p {
+    line-height: 1.6; /* Improve line spacing */
+    margin-bottom: 1rem; /* Add margin between paragraphs */
+    word-spacing: 0.05rem; /* Ensure even word spacing */
+  }
+  .btn-more-info {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+  }
+}
+.contact-info-upper-container p,
+.contact-info-upper-container a {
+  margin: 0.01rem 0; /* Reduce margin for spacing */
+  width: fit-content;
+}
+.section__text__p1 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem; /* Increase font size */
+
+}
+.modal-content {
+  width: 90%; /* Adjust width for mobile */
+  margin: 30% auto; /* Adjust margin for mobile */
+}
+/* Add focus display scroll effect on project cards */
+.project-card:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Add a focus shadow */
+  scroll-margin-top: 1rem; /* Adjust scroll position to add some margin at the top */
+}
+
+/* Ensure project cards are focusable */
+.project-card {
+  outline: none;
+  cursor: pointer;
+}
+.note {
+  text-align: center;
+  font-size: 1rem;
+  color: gray;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .btn.btn-color-2:active {
+    transform: scale(0.96);
+    background-color: black;
+    transition: transform 0.2s;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+    overflow-x: hidden; /* Remove horizontal scrollbar */
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  #contact {
+    height: 40vh;
+  }
+  
+  footer {
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+    background-color: white;
+    border-top: 2px solid #e0e0e0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 1rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    border-radius: 10px; /* Rounded edges */
+    text-align: left; /* Ensure text is left-aligned */
+  }
+  .contact-info-container p,
+  .contact-info-container a {
+    margin: 0.5rem 0; /* Add margin for spacing */
+  }
+  .contact-info-container p,
+  .contact-info-container a {
+    text-align: left; /* Ensure text is left-aligned */
+  }
+  .contact-info-container p,
+  .contact-info-container a {
+    margin: 0.5rem 0; /* Add margin for spacing */
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+    text-align: center;
+    flex: 1; /* Ensure the logo takes up available space */
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 46vw;
+    margin: 0 auto; /* Center the container */
+  }
+  .section__pic-container i {
+    font-size: 3rem; /* Adjust the font size to make the icon smaller */
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+    text-align: center; /* Center the title text */
+    padding: 0 1rem; /* Add padding to move the title away from the edge */
+    transition: color 0.3s, transform 0.3s; /* Add transition for hover and click effects */
+  }
+  .title:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  .title:active {
+    color: #0056b3; /* Change color on click */
+    transform: scale(0.95); /* Slightly shrink on click */
+  }
+  .text-container {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    border-radius: 10px; /* Rounded edges */
+  }
+  .text-container p {
+    line-height: 1.6; /* Improve line spacing */
+    margin-bottom: 1rem; /* Add margin between paragraphs */
+    word-spacing: 0.05rem; /* Ensure even word spacing */
+  }
+  section {
+    padding: 2rem 1rem; /* Add padding to sections */
+    margin-bottom: 2rem; /* Add margin to sections */
+  }
+  .btn-more-info {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+  }
+}
+.contact-info-upper-container p,
+.contact-info-upper-container a {
+  margin: 0.01rem 0; /* Reduce margin for spacing */
+  width: fit-content;
+}
+.section__text__p1 {
+  font-size: 1.5rem; /* Increase font size */
+}
+.modal-content {
+  width: 90%; /* Adjust width for mobile */
+  margin: 30% auto; /* Adjust margin for mobile */
+}
+
+.modal-content {
+  width: 90%; /* Adjust width for mobile */
+  margin: 30% auto; /* Adjust margin for mobile */
+}
+/* Add focus display scroll effect on project cards */
+.project-card:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Add a focus shadow */
+  scroll-margin-top: 1rem; /* Adjust scroll position to add some margin at the top */
+}
+
+/* Ensure project cards are focusable */
+.project-card {
+  outline: none;
+  cursor: pointer;
+}
+
+.note {
+  text-align: center;
+  font-size: 1rem;
+  color: gray;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 480px) {
+  html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+    overflow-x: hidden; /* Remove horizontal scrollbar */
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  #contact {
+    margin-bottom: 0;
+  }
+  
+  footer {
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+    background-color: white;
+    border-top: 2px solid #e0e0e0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  #profile {
+    height: 100vh; /* Make the section fit the screen size */
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 0.875rem; /* Slightly smaller font size */
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 1.5rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    border-radius: 10px; /* Rounded edges */
+  }
+  .contact-info-container p,
+  .contact-info-container a {
+    font-size: 0.875rem; /* Slightly smaller font size */
+  }
+  .experience-sub-title {
+    font-size: 1rem; /* Slightly smaller font size */
+  }
+  .logo {
+    font-size: 1.25rem;
+    text-align: center;
+    flex: 1; /* Ensure the logo takes up available space */
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 40vw;
+    margin: 0 auto; /* Center the container */
+  }
+  .section__pic-container i {
+    font-size: 2.5rem; /* Adjust the font size to make the icon smaller */
+  }
+  .section__text__p2 {
+    font-size: 1rem; /* Slightly smaller font size */
+  }
+  .title {
+    font-size: 1.5rem; /* Slightly smaller font size */
+    text-align: center; /* Center the title text */
+    padding: 0 1rem; /* Add padding to move the title away from the edge */
+    transition: color 0.3s, transform 0.3s; /* Add transition for hover and click effects */
+  }
+  .title:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  .title:active {
+    color: #0056b3; /* Change color on click */
+    transform: scale(0.95); /* Slightly shrink on click */
+  }
+  .text-container {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    border-radius: 10px; /* Rounded edges */
+  }
+  .text-container p {
+    line-height: 1.6; /* Improve line spacing */
+    margin-bottom: 1rem; /* Add margin between paragraphs */
+    word-spacing: 0.05rem; /* Ensure even word spacing */
+  }
+  section {
+    padding: 2rem 1rem; /* Add padding to sections */
+    margin-bottom: 2rem; /* Add margin to sections */
+  }
+  #contact .contact-info-container {
+    justify-content: flex-start; /* Align to the left */
+  }
+  .nav-links li a {
+    transition: color 0.3s, transform 0.3s; /* Add transition for hover and click effects */
+  }
+  .nav-links li a:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  .nav-links li a:active {
+    color: #0056b3; /* Change color on click */
+    transform: scale(0.95); /* Slightly shrink on click */
+  }
+  .btn-more-info {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+  }
+}
+.contact-info-upper-container p,
+.contact-info-upper-container a {
+  margin: 0.01rem 0; /* Reduce margin for spacing */
+  width: fit-content;
+}
+.section__text__p1 {
+  font-size: 1.5rem; /* Increase font size */
+}
+
+.modal-content {
+  width: 90%; /* Adjust width for mobile */
+  margin: 30% auto; /* Adjust margin for mobile */
+}
+
+/* Add focus display scroll effect on project cards */
+.project-card:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Add a focus shadow */
+  scroll-margin-top: 1rem; /* Adjust scroll position to add some margin at the top */
+}
+
+/* Ensure project cards are focusable */
+.project-card {
+  outline: none;
+  cursor: pointer;
+}
+
+.note {
+  text-align: center;
+  font-size: 1rem;
+  color: gray;
+  margin-top: 1rem;
+}

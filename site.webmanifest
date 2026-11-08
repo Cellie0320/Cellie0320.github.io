@@ -1,0 +1,23 @@
+{
+  "name": "Marcel De Lange Portfolio",
+  "short_name": "MDL Portfolio",
+  "description": "Portfolio of Marcel De Lange, Junior IT Technician and Microsoft cloud development learner.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b0b0b",
+  "theme_color": "#0b0b0b",
+  "icons": [
+    {
+      "src": "./assests/branding/mdl-favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assests/branding/mdl-apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
