@@ -1,7 +1,9 @@
-# Publish only reviewed website files.
+# Only reviewed website files may be published.
 *
 !/.gitignore
 !/.nojekyll
+!/assests/
+!/assests/branding/
 !/index.html
 !/style.css
 !/mediaqueries.css
@@ -10,10 +12,6 @@
 !/script.js
 !/mobile.js
 !/site.webmanifest
-!/assests/
-/assests/*
-!/assests/branding/
-/assests/branding/*
 !/assests/branding/mdl-social-preview.png
 !/assests/branding/mdl-favicon-16.png
 !/assests/branding/mdl-favicon-32.png
